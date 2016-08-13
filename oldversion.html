@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Hangman</title>
+		<link rel="stylesheet" href="assets/css/hangman.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<script src="bootcamp/week4/homework/week-3-game/assets/javascript/game.js"></script>
+<div class="food-div"><img src="assets/images/austin.jpg" alt="food in austin texas" height="150" width="275"></div>
+
+	<div class="game-section">
+  <h1>Hangman! </h1>
+  <p>Press play to get this ball rollin'</p>
+  <p><a class="btn btn-primary btn-lg" onclick="start()">Play</a></p>
+</div>
+
+<div id="current-word-section">
+	<h2 class="section-title">Wins</h2>
+	<div id="wins"></div>
+</div>
+
+<div id="current-word-section">
+	<h2 class="section-title">Current word</h2>
+	<div id="current-word"></div>
+	</div>
+
+<div id="guesses-remaining">
+	<h2 class="section-title">Number of Guesses Remaining</h2>
+	<div id="guesses-remaining"></div>
+	</div>
+
+<div id="guessed-letters">
+	<h2 class="section-title">Letters Already Guessed</h2>
+	<div id="guessed-letters"></div>
+	</div>
+
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+    // Here we use jQuery to select the header with "clickMe" as its ID.
+    // Whenever it is clicked... 
+    $("#current-word-section").on("click", function(){
+        // Trigger an alert.
+        alert("I've been clicked!");
+    })
+$("#guesses-reamining").on("click", function(){
+	alert("Guess another letter");
+ }
+
+
+})
+
+
+
+
+
+</script>
+</body>
+</html>
